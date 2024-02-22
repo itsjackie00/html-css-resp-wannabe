@@ -131,29 +131,31 @@ img {
 /* ********************************************** 
          MEDIA QUERY
 *************************************************/
-@media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
+@media screen and (max-width:1200px){
+    .container{
+        width: auto;
+        max-width: 1140px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    /* .container {
+        width: 100%;
+    } */
 }
 
 @media screen and (max-width: 480px){
     .lessons .col {
         width: 100%;
     }
-    .col{
-        padding-bottom: 70px;
-    }
     .row{
         display: block;
     }
-    .steps .col {
-        width: calc(100% / 1);
-    }
-    .why-us .col-right {
+    .steps .col,
+    .why-us .col-right,
+    .why-us .col-left
+    {
         width: 100%;
-    }
-    .why-us .col-left{
-        width: 100%;
+        margin-bottom: 50px;
     }
 }
